@@ -1555,7 +1555,7 @@ docker pull postgres:13.5
 
 
 
-- 创建`/usr/postgresql/data`文件夹，用来做持久化并启动容器
+- 创建`/usr/postgresql/data`文件夹，用来做持久化并启动容器 
 
 ```
 docker run --name postgresql_001 -e POSTGRES_PASSWORD=密码 -p 5432:5432 -v /usr/postgresql/data:/var/lib/postgresql/data -d postgres:13.5
